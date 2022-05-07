@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 from torchvision.utils import save_image
 
-from datasets import ImageDataset
+from dataset import ImageDataset
 from models import Generator
 
 parser = argparse.ArgumentParser()

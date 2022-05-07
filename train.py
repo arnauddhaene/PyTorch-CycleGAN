@@ -6,7 +6,7 @@ from torch.autograd import Variable
 from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 
-from datasets import ImageDataset
+from dataset import ImageDataset
 from models import Generator
 from models import Discriminator
 from utils import ReplayBuffer

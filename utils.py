@@ -52,7 +52,7 @@ class Logger():
             else:
                 self.losses[loss_name] += losses[loss_name].data.item()
             
-            sys.stdout.write(f'{loss_name}: {(self.losses[loss_name] / self.batches):.4f}')
+            sys.stdout.write(f'{loss_name}: {(self.losses[loss_name] / self.batch):.4f}')
             sys.stdout.write(' -- ' if (i + 1) == len(losses.keys()) else ' | ')
 
         batches_done = self.batches_epoch * (self.epoch - 1) + self.batch
